@@ -123,7 +123,7 @@ cd BeMyMate-Backend
 ### **2️⃣ Set Up Environment Variables**
 Create a `.env` file and add:
 ```ini
-DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/devTinder
+DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/BeMyMate
 JWT_SECRET=your_jwt_secret
 PORT=3000
 ```
@@ -133,22 +133,6 @@ PORT=3000
 npm start
 ```
 Server runs at: `http://localhost:3000/`
-
----
-
-## 🔗 Frontend Integration
-The frontend for DevTinder is available at:
-🔗 **[DevTinder Frontend Repository](https://github.com/akshadjaiswal/devTinder-frontend)**
-
-Make sure the backend is running before accessing the frontend.
-
----
-## Learning Resources
-
-Explore my additional repositories to deepen your understanding of related topics in the JavaScript ecosystem:
-
-- [Namaste Javascript](https://github.com/akshadjaiswal/Namaste-Javascript): A repository focused on learning Javascript concepts, from basics to advanced programming.
-- [Namaste React](https://github.com/akshadjaiswal/Namaste-React): A repository dedicated to mastering React.js, covering foundational and advanced aspects of building interactive UIs.
 
 ---
 
