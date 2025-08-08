@@ -9,10 +9,6 @@ This repository contains the **backend** of DevTinder, built with **Node.js, Exp
 
 ---
 
-## 📖 My Node.js Learning Repository
-I learned and maintained all my Node.js knowledge in one place:
-[**Namsate Nodejs**](https://github.com/akshadjaiswal/Namaste-Nodejs)
-
 
 ## 🛠️ Tech Stack
 - **Backend Framework**: [Node.js](https://nodejs.org/en) + [Express.js](https://expressjs.com/)
@@ -120,8 +116,8 @@ I learned and maintained all my Node.js knowledge in one place:
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/akshadjaiswal/devTinder-backend.git
-cd devTinder-backend
+git clone https://github.com/DreamerAkhilesh/BeMyMate-Backend.git
+cd BeMyMate-Backend
 ```
 
 ### **2️⃣ Set Up Environment Variables**
