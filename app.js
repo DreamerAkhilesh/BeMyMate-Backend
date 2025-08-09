@@ -12,7 +12,8 @@ app.use(
     credentials: true,
   })
 );
-
+// This runs before defining any routes, so all routes can handle JSON requests
+// Middleware to parse incoming JSON request bodies into `req.body`
 app.use(express.json());
 app.use(cookieParser());
 
