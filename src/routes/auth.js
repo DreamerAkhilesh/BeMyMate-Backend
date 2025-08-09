@@ -29,7 +29,7 @@ authRouter.post("/signup", async (req, res) => {
       throw new Error("Email Already Exist")
     }
 
-
+    // Creating an instance of the model
     const user = new User({
       firstName,
       lastName,
