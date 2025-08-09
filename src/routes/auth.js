@@ -8,6 +8,10 @@ const { validateSignupData } = require("../utils/validation");
 // We use to create the route using app.use() or any specific http 
 // How do we shifted these specific_router.http() ;
 
+// IMPORTANT
+// Use async/await for non-blocking DB calls, 
+// and try/catch to handle potential query/connection errors
+
 
 //signup api for signing the user
 authRouter.post("/signup", async (req, res) => {
