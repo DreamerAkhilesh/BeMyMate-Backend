@@ -50,7 +50,9 @@ const userSchema = new mongoose.Schema(
         if (!["male", "female", "others","Male", "Female", "Others"].includes(value)) {
           throw new Error("Not a valid gender (Male , Female and other)");
         }
-      },
+      }, 
+      // These validator functions by default only run at the time of creation and not at the time of updation
+      // But we can make them run at the time of updation also by using runvalidator functions
     },
     about: {
       type: String,
