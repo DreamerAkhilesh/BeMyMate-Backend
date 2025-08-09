@@ -16,7 +16,7 @@ const { validateSignupData } = require("../utils/validation");
 //signup api for signing the user
 authRouter.post("/signup", async (req, res) => {
   try {
-    //Validate the data
+    // Step 1 : Validate the data
     validateSignupData(req);
     const {
       firstName,
@@ -28,7 +28,7 @@ authRouter.post("/signup", async (req, res) => {
       about,
       skills,
     } = req.body;
-    //Encrypt the password
+    // Step 2 : Encrypt the password
     const passwordHash = await bcrypt.hash(password, 10);
 
     const checkEmail=await User.findOne({emailId});
