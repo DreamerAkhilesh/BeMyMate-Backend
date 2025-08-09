@@ -5,6 +5,10 @@ const validator = require("validator");
 const bcrypt = require("bcryptjs");
 const { validateSignupData } = require("../utils/validation");
 
+// We use to create the route using app.use() or any specific http 
+// How do we shifted these specific_router.http() ;
+
+
 //signup api for signing the user
 authRouter.post("/signup", async (req, res) => {
   try {
