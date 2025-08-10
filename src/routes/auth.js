@@ -77,6 +77,7 @@ authRouter.post("/login", async (req, res) => {
 
     // Step 3 : if Valid, then generate the authentication token for the login user.
     if (isValidPassword) {
+      // token creation login is written in th model itself for the reusability.
       const token = await user.getjwt();
       res.cookie("token", token, {
         expires: new Date(Date.now() + 8 * 3600000),
