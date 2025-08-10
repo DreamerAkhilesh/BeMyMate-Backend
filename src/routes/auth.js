@@ -64,6 +64,7 @@ authRouter.post("/signup", async (req, res) => {
 authRouter.post("/login", async (req, res) => {
   try {
     const { emailId, password } = req.body;
+    // Step 1 : Check if emailId is valid or not.
     if (!validator.isEmail(emailId)) {
       throw new Error("Invalid Email");
     }
@@ -71,7 +72,10 @@ authRouter.post("/login", async (req, res) => {
     if (!user) {
       throw new Error("Invalid Credentials");
     }
+    // Step 2 : Check whether the the entered password and stored password are same.
     const isValidPassword = await user.validatePassword(password);
+
+    // Step 3 : if Valid, then generate the authentication token for the login user.
     if (isValidPassword) {
       const token = await user.getjwt();
       res.cookie("token", token, {
