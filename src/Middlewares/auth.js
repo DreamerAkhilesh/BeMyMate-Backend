@@ -14,6 +14,7 @@ const userAuth = async (req, res, next) => {
     if (!user) {
       throw new Error("User Not Found");
     }
+    // user has been added to the rquest, so that the further apis can know the user.
     req.user = user;
     next();
   } catch (err) {

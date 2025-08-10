@@ -18,11 +18,12 @@ app.use(express.json());
 app.use(cookieParser());
 
 //routes
+// these routes contains the api and the corresponding request handler
+// We could have also created a seperate folder for these request handlers corresponding to each router, as controllers.
 const authRouter = require("./src/routes/auth");
 const profileRouter = require("./src/routes/profile");
 const requestRouter = require("./src/routes/request");
 const userRouter = require("./src/routes/user");
-const user = require("./src/Models/user");
 
 app.use("/", authRouter);
 app.use("/", profileRouter);
